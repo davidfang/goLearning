@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 const (
-	_  = iota
+	Bt = iota
 	KB = 1 << (10 * iota)
 	MB = 1 << (10 * iota)
 	GB = 1 << (10 * iota)
@@ -22,6 +22,6 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(p)
 
-	fmt.Printf("%v\t%v\t%v\t%v\t%v \n", KB, MB, GB, TB,PB)
-	fmt.Printf("%T\t%T\t%T\t%T\t%T \n", KB, MB, GB, TB,PB)
+	fmt.Printf("%v\t%v\t%v\t%v\t%v\t%v \n", Bt, KB, MB, GB, TB, PB)
+	fmt.Printf("%T\t%T\t%T\t%T\t%T\t%T \n", Bt, KB, MB, GB, TB, PB)
 }
